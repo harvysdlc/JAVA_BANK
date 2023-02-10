@@ -17,7 +17,7 @@ public class Terminal extends Accounts{
                 mainMenu();
             }
             else {
-                System.out.println("-- Account Not Found! --");
+                System.out.println("Account Not Found!");
                 sayWelcome();
             }
         }
@@ -37,7 +37,7 @@ public class Terminal extends Accounts{
                 break;
                 case 3: deposit();
                 break;
-                case 4: System.out.println("-- Thankyou for using our service! --");  
+                case 4: System.out.println("Thankyou!");  
                 sayWelcome();
                 break;
             }
@@ -59,48 +59,48 @@ public class Terminal extends Accounts{
             userPick = sc.nextInt();
             switch(userPick){
                 case 1: if(getBalance(getcurrentAccount()) < 20){
-                    System.out.println("-- Insufficient remaining balance. --\n-- Please choose a smaller amount --");
+                    System.out.println("Insufficient remaining balance.\nPlease choose a smaller amount");
                     withdrawal();
                 }
                 else {
                     reduceBalance(getcurrentAccount(), 20);
-                    System.out.println("-- You can now take the money! --");
+                    System.out.println("You can now take the money!");
                 }
                 break;
                 case 2: if(getBalance(getcurrentAccount()) < 40){
-                    System.out.println("-- Insufficient remaining balance. --\n-- Please choose a smaller amount --");
+                    System.out.println("Insufficient remaining balance.\nPlease choose a smaller amount");
                     withdrawal();
                 }
                 else {
                     reduceBalance(getcurrentAccount(), 40);
-                    System.out.println("-- You can now take the money! --");
+                    System.out.println("You can now take the money!");
                 }
                 break;
                 case 3: if(getBalance(getcurrentAccount()) < 60){
-                    System.out.println("-- Insufficient remaining balance. --\n-- Please choose a smaller amount --");
+                    System.out.println("Insufficient remaining balance.\nPlease choose a smaller amount");
                     withdrawal();
                 }
                 else {
                     reduceBalance(getcurrentAccount(), 60);
-                    System.out.println("-- You can now take the money! --");
+                    System.out.println("You can now take the money!");
                 }
                 break;
                 case 4: if(getBalance(getcurrentAccount()) < 100){
-                    System.out.println("-- Insufficient remaining balance. --\n-- Please choose a smaller amount --");
+                    System.out.println("Insufficient remaining balance.\nPlease choose a smaller amount");
                     withdrawal();
                 }
                 else {
                     reduceBalance(getcurrentAccount(), 100);
-                    System.out.println("-- You can now take the money! --");
+                    System.out.println("You can now take the money!");
                 }
                 break;
                 case 5: if(getBalance(getcurrentAccount()) < 200){
-                    System.out.println("-- Insufficient remaining balance. --\n-- Please choose a smaller amount --");
+                    System.out.println("Insufficient remaining balance.\nPlease choose a smaller amount");
                     withdrawal();
                 }
                 else {
                     reduceBalance(getcurrentAccount(), 200);
-                    System.out.println("-- You can now take the money! --");
+                    System.out.println("You can now take the money!");
                 }
                 break;
                 case 6: mainMenu();
